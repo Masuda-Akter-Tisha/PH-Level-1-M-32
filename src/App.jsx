@@ -1,4 +1,4 @@
-
+import Counter from './Counter';
 import './App.css'
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
   return (
     <>
     <h1>React + Vite</h1>
+    <Counter></Counter> 
+    <br />
     {/* <button className='button' onclick = "clickHandling ()">Click Me</button> */}
     <button className='button' onClick= {clickHandling}>Click Me</button>
     <br/>
@@ -31,3 +33,5 @@ function App() {
 }
 
 export default App
+
+
