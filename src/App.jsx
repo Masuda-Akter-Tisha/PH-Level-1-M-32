@@ -1,5 +1,6 @@
 import Counter from './Counter';
 import './App.css'
+import Batsman from './Batsman';
 
 function App() {
   const clickHandling = () => {
@@ -14,6 +15,7 @@ function App() {
     <>
     <h1>React + Vite</h1>
     <Counter></Counter> 
+    <Batsman></Batsman>
     <br />
     {/* <button className='button' onclick = "clickHandling ()">Click Me</button> */}
     <button className='button' onClick= {clickHandling}>Click Me</button>
