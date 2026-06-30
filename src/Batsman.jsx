@@ -2,18 +2,22 @@ import { useState } from "react"
 
 export default function Batsman () {
     const [runs, setRuns] = useState (0);
+    const [six, setSix] = useState (0);
 
     const handleSingle = () => {
-        let newRuns = runs + 1;
-        setRuns (newRuns);
+        let updateRuns = runs + 1;
+        setRuns (updateRuns);
     } 
     const handleSix = () => {
-        const newRuns = runs + 6;
-        setRuns (newRuns);
+        const updateRuns = runs + 6;
+        const updateSix = six + 1;
+        setSix (updateSix);
+        setRuns (updateRuns);
     } 
     return (
         <div>
             <h3>Player : Bangladeshi Batsman</h3>
+            <p><small>Six : {six}</small></p>
             {runs > 50 && <p>Your Score : {runs}</p>}
             <h1>Score : {runs}</h1>
             <button onClick= {handleSingle}>One</button>

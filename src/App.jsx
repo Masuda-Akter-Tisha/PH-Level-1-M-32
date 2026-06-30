@@ -1,6 +1,7 @@
 import Counter from './Counter';
 import './App.css'
 import Batsman from './Batsman';
+import Library from './Library';
 
 function App() {
   const clickHandling = () => {
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
     <h1>React + Vite</h1>
+    <Library></Library>
     <Counter></Counter> 
     <Batsman></Batsman>
     <br />
