@@ -6,7 +6,7 @@ export default function Users ({fetchPromise}) {
     
     return (
         <div className='card'>
-        <h3>Users : {users.length}</h3>
+        <h3>users : {users.length}</h3> 
         </div>
     )
 }
