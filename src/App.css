@@ -189,3 +189,11 @@
   margin: 0px auto;
   font-size: 20px;
 }
+.card {
+  border: 1px solid rgb(223, 172, 223);
+  margin: 10px 200px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: mediumpurple;
+  color: thistle;
+}
