@@ -197,3 +197,11 @@
   background-color: mediumpurple;
   color: thistle;
 }
+.card2 {
+  border: 1px solid rgb(106, 135, 97);
+  margin: 10px 200px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(154, 197, 139);
+  color: rgb(44, 89, 3);
+}
