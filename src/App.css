@@ -205,3 +205,10 @@
   background-color: rgb(154, 197, 139);
   color: rgb(44, 89, 3);
 }
+.card3 {
+  border: 2px solid rgb(209, 185, 5);
+  margin: 10px 200px;
+  padding: 30px;
+  border-radius: 10px;
+  color: rgb(221, 194, 72);
+}
