@@ -8,6 +8,7 @@ import { Suspense } from 'react';
 import Posts from './Posts';
 import Players from './Players';
 import Count from './Count';
+import ShowHide from './ShowHide';
 
 const fetchPromise = fetch ('https://jsonplaceholder.typicode.com/users')
 .then (res => res.json ())
@@ -37,6 +38,7 @@ function App() {
     <>
     <h1>React + Vite</h1>
     <Count></Count>
+    <ShowHide></ShowHide>
     <Players></Players>
     <Suspense fallback = {<p>Loading...</p>}>
       <Users fetchPromise = {fetchPromise}></Users>
