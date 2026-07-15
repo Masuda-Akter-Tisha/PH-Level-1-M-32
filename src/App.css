@@ -212,3 +212,10 @@
   border-radius: 10px;
   color: rgb(221, 194, 72);
 }
+.card4 {
+  border: 2px solid white;
+  margin: 10px 200px;
+  padding: 30px;
+  border-radius: 10px;
+  color: burlywood
+}

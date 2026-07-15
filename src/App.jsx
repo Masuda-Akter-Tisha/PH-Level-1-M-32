@@ -9,6 +9,7 @@ import Posts from './Posts';
 import Players from './Players';
 import Count from './Count';
 import ShowHide from './ShowHide';
+import Employees from './Employees';
 
 const fetchPromise = fetch ('https://jsonplaceholder.typicode.com/users')
 .then (res => res.json ())
@@ -23,8 +24,14 @@ const fetchPromise3 =async () => {
   return res.json ();
 }
 
+const fetchPromise4 = async () => {
+  const response =await fetch ('https://jsonplaceholder.typicode.com/users');
+  return response.json ();
+}
+
 function App() {
   // const friendsPromise = fetchFriends ();
+  const employeePromise = fetchPromise4 ();
   const postsPromise = fetchPromise3 ();
   const clickHandling = () => {
     alert ('Clicked Button');
@@ -37,6 +44,9 @@ function App() {
   return (
     <>
     <h1>React + Vite</h1>
+    <Suspense fallback = {<h3>Employees data are Loading...</h3>}>
+      <Employees employeePromise = {employeePromise}></Employees>
+    </Suspense>
     <Count></Count>
     <ShowHide></ShowHide>
     <Players></Players>
