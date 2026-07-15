@@ -25,7 +25,7 @@ const fetchPromise3 =async () => {
 }
 
 const fetchPromise4 = async () => {
-  const response =await fetch ('https://jsonplaceholder.typicode.com/users');
+   const response =await fetch ('https://jsonplaceholder.typicode.com/users');
   return response.json ();
 }
 
